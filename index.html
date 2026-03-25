@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mafia Pass-and-Play</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Mafia Game</h1>
+
+<input id="name" placeholder="Name">
+<button onclick="createRoom()">Create</button>
+<input id="roomId" placeholder="Room ID">
+<button onclick="joinRoom()">Join</button>
+
+<button onclick="addBot()">Add Bot</button>
+<button onclick="startGame()">Start</button>
+
+<h2 id="roleCard" class="card hidden"></h2>
+<h2 id="phase"></h2>
+<h3 id="timer"></h3>
+
+<ul id="players"></ul>
+
+<div id="chatBox"></div>
+<input id="msg"><button onclick="sendMsg()">Send</button>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>
